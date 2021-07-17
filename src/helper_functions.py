@@ -1,15 +1,14 @@
 # This file is for functions to be used in either EDA or data visualization.
 
-def seperate_range(series):
+def find_min(object):
     '''
     Meant to be used in the dataframe.apply method
     in order to seperate the reference interval series into a minimum_expected series
-    and a maximum_expected series
 
     Parameters
     ----------
-    series: pandas.series
-        The row the apply method is currently passing to this function
+    object: numpy.int64
+        The object the apply method is passing to the function
     
     
     Returns
@@ -17,14 +16,33 @@ def seperate_range(series):
     _min: float
         The minimum value in the range
     
-    _max: float
-        The maximum value in the range
     '''
-    lst = series['REFERENCE_INTERVAL'].split()
+    lst = str(object).split()
     _min = float(lst[0])
-    _max = float(lst[-1])
+    
+    return _min
 
-    return _min, _max
+def find_max(object):
+    '''
+    Meant to be used in the dataframe.apply method
+    in order to seperate the reference interval series into a maximum_expected series
+
+    Parameters
+    ----------
+    object: numpy.int64
+        The object the apply method is passing to the function
+    
+    
+    Returns
+    ----------
+    _min: float
+        The minimum value in the range
+    
+    '''
+    lst = str(object).split()
+    _max = float(lst[-1])
+    
+    return _max
 
 
 if __name__ == '__main__':
