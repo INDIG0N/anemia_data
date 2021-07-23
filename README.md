@@ -99,3 +99,9 @@ Anemia affecting men and women differently, is not mutually exclusive from them 
 In short, none of my hypotheses about altered ejection fractions or platelet counts in people with anemia held much water, but that's what hypothesis testing is for.
 
 I was able to determine that men and women naturally have difering levels of hemoglobin regardless of wether anemia is present or not, meaning differing effects on hemoglobin count between sexes, if it exists, is likely minimal.
+
+## Sources
+
+Dataset1: https://www.kaggle.com/andrewmvd/heart-failure-clinical-data?rvi=1
+
+Dataset2: https://www.kaggle.com/alisabrie/anemia 
